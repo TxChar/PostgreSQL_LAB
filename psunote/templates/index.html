@@ -21,6 +21,7 @@
       Last update: {{ note.updated_date }}
     </div>
     <a href="{{ url_for('notes_edit', note_id=note.id) }}" class="btn btn-primary" style="margin-top: 10px;">Edit</a>
+    <a href="{{ url_for('notes_delete', note_id=note.id) }}" class="btn btn-danger" style="margin-top: 10px;">Delete</a>
   </div>
 </div>
 {% endfor %}
